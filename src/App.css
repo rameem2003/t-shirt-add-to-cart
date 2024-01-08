@@ -1,0 +1,86 @@
+/* navber start */
+.cartButton {
+  position: relative;
+}
+
+.cartButton span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* navber end */
+
+/* sidebar start */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 20%;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.sidebar.show {
+  right: 0%;
+}
+
+.sidebar .cartItem {
+  border: 2px solid white;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 150px;
+  position: relative;
+}
+.sidebar .cartItem img {
+  object-fit: cover !important;
+}
+
+.sidebar .cartItem .quantity {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .cartItem .quantity input {
+  width: 25px;
+  text-align: center;
+}
+
+.sidebar .cartItem .subtotal {
+  position: absolute;
+  bottom: -14px;
+  right: 0;
+}
+
+.sidebar .cartItem .delete {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: -19px;
+  right: -10px;
+}
+
+.grandTotal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 8px;
+  text-align: center;
+  background-color: white;
+}
+/* sidebar end */
